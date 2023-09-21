@@ -5,6 +5,10 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -18,6 +22,10 @@ body {
 h1 {
     font-size: 50px;
     padding: 40px;
+}
+
+p {
+    opacity: .7;
 }
 
 .boujee-text {
@@ -47,9 +55,7 @@ h1 {
 
 #canvas {
     margin: 40px;
-    min-height: 50px;
     width: 1000px;
-    background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
@@ -66,5 +72,43 @@ h1 {
 }
 
 .tc {
-    background-color: #34e4;
+    background: #34e4;
+}
+
+span {
+    font-size: large;
+    font-weight: 600;
+    background: linear-gradient(#34e, #f2f2f2);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.scrollT, .scrollB {
+    position: fixed;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    margin: 40px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    background: linear-gradient(#3e3e3e44, #34e4);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 10px #f2f2f288;
+    transition: ease .3s;
+    &:hover {
+        box-shadow: 0 0 18px #f2f2f288;
+    }
+}
+
+.scrollT {
+    right: 0;
+}
+
+.scrollB {
+    left: 0;
 }
