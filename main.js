@@ -17,7 +17,7 @@ for (var i = 0; i < digits.length; i++) {
     canvas.appendChild(digit)
 }
 
-const piDigitsFilePath = 'pi100000.txt';
+const piDigitsFilePath = 'pi1000.txt';
 
 async function displayPiDigits() {
     const response = await fetch(piDigitsFilePath);
